@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Més elements del formulari</h1>
+
+    <h2>Etiqueta FIELDSET</h2>
+
+    <p>S'utilitza per agrupar elements dins d'un formulri. Es fa servir l'etiqueta fieldset i també l'etiquet de legend que permet posar un nom al contingut del fieldset.</p>
+
+    <form>
+        <fieldset>
+            
+            <legend>Dades personals</legend>
+            <div>
+                
+                <label for="name">Nom</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="surname">Cognom</label>
+                <input type="text" id="surname">
+            </div>
+        </fieldset>
+    </form>
+
+    <h2>Input tipus file</h2>
+
+    <p>Serveix per afegir un fitxer al formulari.</p>
+
+    <form>
+        <fieldset>
+            
+            <legend>Dades personals</legend>
+            <div>
+                <label for="name">Nom</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="surname">Cognom</label>
+                <input type="text" id="surname">
+            </div>
+            <div>
+                <input type="file" name="" id="">
+            </div>
+        </fieldset>
+    </form>
+
+    <h2>Etiqueta METER</h2>
+    <p>A part de l'atribut indispenable value, porta atributs min, max, low, high i optimum.</p>
+
+    <form>
+        <lavel for="fuel">Combustble</lavel>
+        <meter id="fuel" min="0" max="100" value="90" low="25" high="75" optimum="100"></meter>
+    </form>
+
+
+    <h2>ETIQUETA PROGRESS</h2>
+<p>Crea una barra de progrés en funció dels atributs value i max.</p>
+
+    <form>
+        <label for="task">Tasca 1</label>
+        <progress id="task" max="100" value="90"></progress>
+    </form>
+
+    <form>
+        <label for="task">Tasca 2</label>
+        <progress id="task" max="200" value="30"></progress>
+    </form>
+
+    <p>Una bona pràctica és treballar amb els percentatges. Dues barres, una amb max 200 i l'altre amb max 200 i l'altre amb max 100 tenen la mateixa longitud</p>
+
+    <h2>ETIQUETA TEXTAREA</h2>
+    <p>Porta els atributs cols i rows amb valors numerics.</p>
+
+    <form>
+        <div>
+            <label for="message">Escriu el teu missatge</label>
+        </div>
+            <textarea name="" id="message" cols="80" rows="20"></textarea>
+    </form>
+</body>
+</html>

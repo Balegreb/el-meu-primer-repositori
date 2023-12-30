@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ENVIAMEN METODE GET VS POST</h1>
+
+    <h2>METODE GET</h2>
+
+    <p>És el metode d'entrada a pagines web quan nosaltres hi entrem a través de la url. Poseu l'atribut action amb el valor "enviar.html" i l'atribut method amb el valor get</p>
+
+    <h3>SENSE ATRIBUT NAME</h3>
+    
+        <form action="enviar.html" method="get">
+            <label for="name">Nom</label>
+                <input type="text" id="name">
+            <label for="surname">Cognom</label>
+            <input type="text" id="surname">
+            <input type="submit">
+        </form>
+    
+    
+    <p>Quan no existeix el fitxer que posem al action ens retorna un error "Cannot GET /enviar.html"</p>
+
+    <p>Malgrat posem el nom i cognom, no s'envia res perque en el URL despres del signe d'interrogació no hi ha res. "Cannot GET /enviar.html?" </p>
+   
+    <h3>AMB ATRIBUT NAME</h3>
+   
+   
+     <form action="enviar.html" method="get">
+        <label for="name">Nom</label>
+            <input type="text" id="name" name="nom">
+        <label for="surname">Cognom</label>
+        <input type="text" name="cognom" id="surname">
+        <input type="submit">
+    </form>
+
+
+    <p>Amb els atributs names podem veure que en el URL apareixen els camps que hem posat. Per exemple: http://127.0.0.1:5500/enviar.html?nom+i+cognom=&nom+i+cognom=</p>
+
+
+    <h3>METODE POST</h3>
+    <p>És un enviament del formulari per la porta de darrera. L'Error 405 que surt significa que ha intentat enviar les dades però aquestes dades no han arribat al destí. </p>
+
+    <form action="enviar.html" method="post">
+        <label for="name">Nom</label>
+            <input type="text" id="name" name="nom">
+        <label for="surname">Cognom</label>
+        <input type="text" name="cognom" id="surname">
+        <input type="submit">
+    </form>
+
+    <p>Inspeccionant, si enviem el formulari s'ha d'entrar a Network i despres clicar a lo que has enviat que estarà de color vermell i allà li dones a payload.</p>
+
+    <form action="enviar.html" method="post">
+        <label for="name">Nom</label>
+            <input type="text" id="name" >
+        <label for="surname">Cognom</label>
+        <input type="text" id="surname">
+        <input type="submit">
+    </form>
+    <p>(sense atribut name)</p>
+    <p>No apareix payload.</p>
+</body>
+</html>

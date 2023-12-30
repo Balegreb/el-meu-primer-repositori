@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SELECT</h1>
+    <h2>Element html select basic</h2>
+    <p>L'etiqueta select serveix per seleccionar entre una llista d'opcions un o més items</p>
+
+    <form>
+        <select>
+        </select>
+    </form>
+    <p>Si es posa l'etiqueta select sola, activa una llista desplegable peró no es veu res.</p>
+
+    <h2>Etiqueta option</h2>
+
+    <p>Cada etiqueta option afegeix un item per poder triar en el menú desplegable. El select porta l'atribut name i les enquestes option els atributs value.</p>
+
+
+    <form>
+        <label for="languages">Tria els llenguatges web que controlis</label>
+        <select name="languages" id="languages">
+            <option value="html">HTML</option>
+        </select>
+    </form>
+
+    <p>L'atribut multiple que es posa dins l'etiqueta select, ens permet escollir-ne més d'un si apretem la tecla control.</p>
+
+    <form>
+    <select name="languages" multiple>
+        <option value="html">HTML</option>
+        <option value="ccs">CCS</option>
+        <option value="jabascrip">JABASCRIP</option>
+    </select>
+    </form>
+
+    <h2>Element HTML avançat</h2>
+    <p>Podem ordenar els elements que farem escollir als usuaris</p>
+    <p>per agrupar es fa servir el optgroup</p>
+    <form>
+    <select name="pets">
+        <optgroup label="Ocells">
+            <option value="pardal">Pardal</option>
+            <option value="cadernera"></option>
+        </optgroup>
+        <optgroup label="Reptls">
+            <option value="cocodril">cocodril</option>
+            <option value="serp">serp</option>
+            <option value="tortuga">tortuga</option>
+            <option value="iguana">iguana</option>
+        </optgroup>
+        <optgroup label="Mamifers">
+            <option value="bufal">bufal</option>
+            <option value="lleo">lleo</option>
+            <option value="guineu">guineu</option>
+            <option value="rinoceront">rinoceront</option>
+        </optgroup>
+    </select>
+    </form>
+</body>
+</html>

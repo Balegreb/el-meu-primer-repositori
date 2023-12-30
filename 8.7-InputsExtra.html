@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Text</title>
+</head>
+<body>
+    <a href="/index.html">INDEX.HTML</a>
+    <h1>INPUTS EXTRA</h1>
+    <h2>INPUT TIPUS COLOR</h2>
+    <p>U input de tipus color ens permet priar un color en una paleta de colors. Si feu una pàgina on l'usuari hagi d'escolllir un color per algun item en concret o el color de fons d'una pagina us anira molt bé.</p>
+    <form>
+        <input type="color">
+    </form>
+  
+    <h2>INPUT TIPUS NUMBER</h2>
+    <p>Un input de tipus number només ens deixa posar números. Les petites fletxes que surten a la dreta per pujar o baixar el numero es diuen widgets. Aquest input s'ha d'utilitzar per temes numèrics que no siguin dates. Per demanar les dates ja en tenim d'especifics.</p>
+
+    <form>
+        <input type="number">
+    </form>
+
+    <h2>INPUT TIPUS RANGE</h2>
+    <p>Un input de tipus range ens pinta una barra per seleccionar un valor. Accepta l'atribut step que determina de quant en quant es mou la nostra barra. També té l'atribut min i max.</p>
+    <form>
+        <input type="range">
+    </form>
+
+    <p>Accepta l'atrbut stepque determina de quant en qant es pot mourela barra.</p>
+        <form>
+            <input type="range" step="20">
+        </form>
+
+    <p>També accepta els atributs min i max</p>
+        <form>
+            <input type="range" step="10" min="0" max="30">
+        </form>
+    <h2>INPUT TIPUS RESET</h2>
+    <p>Un input de tipus reset crea un botó que permet borrar tots els camps del formulari.</p>
+
+    <form>
+        <input type="reset">
+    </form>
+    <form>
+        <label for="name">nom</label>
+        <input id="name">
+        <button>Enviar formulari</button>
+        <input type="reset">
+    </form>
+
+
+</body>
+</html>

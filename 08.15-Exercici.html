@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARI DE FEDERACIÓ</title>
+</head>
+<body>
+<h1>FORMULARI PER A JUGADORS</h1>
+
+    <form action="/enviar_dades" method="post">
+        
+        <fieldset>
+            <legend>Informació Personal</legend>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom">
+            <br>
+            <label for="cognom">Cognom:</label>
+            <input type="text" id="cognom" name="cognom">
+            <br>
+            <label for="adreca">Adreça:</label>
+            <input type="text" id="adreca" name="adreca">
+        </fieldset>
+    
+    <br>
+
+        <label for="genere">Gènere:</label>
+        <select id="genere" name="genere">
+            <option value="home">Home</option>
+            <option value="dona">Dona</option>
+        </select>
+        <br>
+        <label for="estat_civil">Estat Civil:</label>
+        <input type="text" id="estat_civil" name="estat_civil" value="solter/a">
+        <br>
+    
+        <label for="data_naixement">Data de Naixement:</label>
+        <input type="date" id="data_naixement" name="data_naixement" >
+        <br>
+
+        
+            <input type="email" id="email" name="email" placeholder="Posa aquí el teu correu electronic" size="30">
+        
+        <br>
+        
+        <label for="mobil">Número de mòbil (9 dígits):</label>
+            <input type="tel" id="mobil" name="mobil" pattern="9">
+            
+        <br>
+
+        <label for="instagram">Compte d'Instagram (@usuari):</label>
+            <input type="text" id="instagram" name="instagram" pattern="@">
+
+            <label for="twitter">Compte de Twitter (@usuari):</label>
+            <input type="text" id="twitter" name="twitter" pattern="@">
+
+        <br>
+
+        <select>
+            <option value="porter">porter</option>
+            <option value="defensa">defensa</option>
+            <option value="migcampista">migcampista</option>
+            <option value="delanter">delanter</option>
+        </select>
+
+            <br>
+        <button>enviar</button>
+    </form>
+</body>
+</html>

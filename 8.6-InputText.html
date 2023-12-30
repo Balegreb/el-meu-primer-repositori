@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INPUTS AMB TEXT</h1>
+    <p>És el tipus d'input per defecte. Si no poseu cap atribut type en un input, tindreu un input de tipus text.</p>
+    <h2>Atributs habituals</h2>
+    <p>es fa servir els següents atributs.</p>
+    <ul>
+        <li><h3>name</h3></li>
+    </ul>
+    <p>Quan l'usuari introdueix informació en un formulari, el servidor necessita saber a quin formulari controla cada tipus de dada introduïda. Per exemple, en un formulari d'inici de sessió, el servidor necessita saber que hiha introduït com un nom d'usuari i que s'ha proporcioat com a contrasenya.</p>
+
+    <form>
+        <label for="username">username:</label>
+        <input type="text" id="username" name="username" maxlength="10" ><br> <input>
+    </form>
+
+
+    <ul>
+        <li><h3>max-length</h3></li>
+    </ul>
+
+    <p>Serveix per limitar caracters.</p>
+    <form>
+        <input type="text" maxlength="4">
+    </form>
+
+    <ul>
+        <li><h3>Atribut size</h3></li>
+    </ul>
+    <p>Serveix per determinar la grandaria de la caixa. no es gaire util.</p>
+
+    <form>
+        <input type="text" name="" id="" maxlength="4" size="20">
+    </form>
+
+    <h3>Atribut value</h3>
+    <p>L'atribut value s'utilitza pernestablir un valor predeterminat en un camp d'entrada de text HTML. </p>
+
+    <form>
+        <input type="text" value="2021" maxlength="4" size="25">
+    </form>
+
+    <h3>Place holder</h3>
+    <p>Guiar al usuari perque posin alló que desigem. Es pinten d'un color més fluixet i desapareix quan posem la nostra resposta.</p>
+
+    <div>
+        <input type="email" id="email" placeholder="Posa aquí el teu correu electronic" size="60">
+    </div>
+
+    <h3>ATRIBUT PATERN</h3>
+    <p>Inpedeix posar qualsevol text que no haguem pposat en l'expresió regular.</p>
+    <form>
+        <div>
+            <label for="birthay_year">any de naixement</label>
+        </div>
+
+        <div>
+            <input type="text" id="birthay_year" name="birthday_year" pattern="^[1-2][0-9]{3} $" size="40">
+        </div>
+    </form>
+
+    <h3>ATRIBUT REQUIED</h3>
+    <p>Aquest atribut booleà que fa que la casella s'hagi d'omplir obligatoriament.</p>
+    <form>
+        <div>
+            <Label for="birthay_year">Any de naixement</Label>
+        </div>
+        <div>
+            <input type="text" id="birthay_year" name="birthay_year" required size="40">
+        </div>
+    </form>
+</body>
+</html>
